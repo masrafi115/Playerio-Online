@@ -1,0 +1,41 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/linear_playlist"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:padding="8dp"
+		android:gravity="center_horizontal|center_vertical"
+		android:orientation="horizontal">
+		<LinearLayout
+			android:id="@+id/linear1"
+			android:layout_width="110dp"
+			android:layout_height="110dp"
+			android:layout_margin="5dp"
+			android:padding="8dp"
+			android:gravity="center_horizontal|center_vertical"
+			android:orientation="vertical">
+			<ImageView
+				android:id="@+id/image_playlist"
+				android:focusable="false"
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:src="@drawable/add_song_grey"
+				android:scaleType="fitCenter"/>
+			<TextView
+				android:id="@+id/text_playlist"
+				android:focusable="false"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="playlist name"
+				android:textSize="11sp"
+				android:textColor="#838383"
+				android:singleLine="true"/>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>
